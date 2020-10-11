@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Cinzel&family=Hanalei&family=Roboto:wght@300&display=swap');
+
+body {
+   font-family: 'Nunito', sans-serif;
+}
+
+nav {
+   font-family: 'Anton';
+   box-shadow: 0 0 5px black;
+}
+
+.Container {
+   margin-top: 80px;
+}
+
+h1 {
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+   margin-bottom: 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.form-group input {
+   font-size: 13px;
+   padding: 20px !important;
+}
+
+.btn {
+   width: 100px;
+   font-weight: bold;
+}
+
+h1:after {
+   content: '';
+   display: block;
+   margin-top: 5px;
+   border-radius: 20px;
+   width: 20%;
+   height: 2px;
+   background: black;
+   box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.col-lg-6 .form-group p {
+   background: red;
+}
+
+.form-group {
+   position: relative;
+}
+
+.form-group.error {
+   margin-top: 30px;
+}
+
+.form-group.success {
+   margin-top: 30px;
+}
+
+.form-group.error input {
+   border: 1px solid red;
+}
+
+.form-group.error small {
+   color: red !important;
+   visibility: visible;
+   display: flex;
+}
+
+.form-group.success input {
+   border: 1px solid green;
+   box-shadow: 0 0 4px green;
+   background: white !important;
+}
+
+.form-group.success small {
+   visibility: hidden;
+   display: none;
+}
+
+.form-group.success .fa-check-circle {
+   visibility: visible;
+   color: green;
+}
+
+.form-group.error .fa-exclamation-circle {
+   visibility: visible;
+   color: red;
+}
+
+.form-group small {
+   visibility: hidden;
+   display: none;
+   font-weight: bold;
+}
+
+.form-group i {
+   position: absolute;
+   top: 10px;
+   right: 12px;
+   visibility: hidden;
+}
+
+.title {
+   font-weight: bold;
+}
+
+
+.loadAnimation {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   background: black;
+   z-index: 99999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden !important;
+}
+
+.loadAnimation p {
+   color: white;
+   letter-spacing: 2px;
+   font-size: 30px;
+   font-family: 'Cinzel', serif;
+   font-weight: bold;
+}
+
+@media (max-width: 576px) {
+   .Container {
+      padding: 50px;
+      margin-top: 30px;
+   }
+   
+   h1 {
+      font-size: 24px;
+   }
+}

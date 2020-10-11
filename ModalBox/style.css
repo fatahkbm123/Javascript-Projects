@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Cinzel&family=Hanalei&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+nav {
+   box-shadow: 0 0 20px #e1eff6;
+   background: #e1eff6; 
+   font-family: 'Anton', sans-serif;
+   color: #151226 !important;
+}
+
+body {
+   overflow: hidden;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto';
+   transition: background .3s linear;
+}
+
+.containerContent {
+   display: flex;
+   width: 100%;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
+
+button {
+   margin-top: -100px;
+   font-family: 'Hanalei', cursive;
+   font-size: 25px !important;
+   background: black !important;
+   border-radius: 0 0 0px 0 !important;
+   border: none !important;
+   box-shadow: 0 50px 50px -15px black;
+   letter-spacing: 2px;
+   transition: .5s !important;
+   color: rgb(255, 254, 254) !important;
+   z-index: 9999 !important;
+   padding: 5px 15px;
+}
+
+button.active {
+   box-shadow: 0 0 5px black !important; 
+}
+
+button:focus {
+   box-shadow: 0 0 5px black !important; 
+   outline: none;
+}
+
+.Card {
+   width: 300px;
+   height: 150px;
+   padding: 10px;
+   position: absolute;
+   overflow: hidden;
+   border-radius: 4px;
+   transform: translateY(-100px);
+   box-shadow: 0 0 10px white;
+   background: white;
+   opacity: 0;
+   visibility: hidden;
+   transition: .3s;
+}
+
+.Card .title {
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+   position: relative;  
+   margin-left: 5px;
+}
+
+.Card .title p {
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.title span {
+   margin-right: 5px;
+   cursor: pointer;
+   color: white;
+   transition: .3s color linear;
+   font-weight: bolder;
+   padding: 20px;
+   position: absolute;
+   right: -20px;
+   top: -20px;
+   z-index: 1;
+}
+
+.Card .title:after {
+   content: '';
+   display: block;
+   width: 200%;
+   height: 1px;
+   position: absolute;
+   background: rgba(0, 0, 0, .2);
+   bottom: 4px;
+   left: -20px;
+}
+
+
+.Card .title:before {
+   content: '';
+   display: block;
+   width: 60px;
+   height: 60px;
+   border-radius: 50% 0 0 50%;
+   background: black;
+   position: absolute;
+   right: -25px;
+   top: -25px;
+   z-index: -1;
+}
+
+.Card .body {
+   padding: 5px;
+   font-family: 'Cinzel';
+   font-weight: bold;
+   font-size: 15px;
+}
+
+.Card.active {
+   transform: translateY(-50px);
+   opacity: 1;
+   z-index: 999;
+   visibility: visible;
+}
+
+button.active {
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(50px);
+}
+
+.loadAnimation {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   background: black;
+   z-index: 99999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loadAnimation p {
+   color: white;
+   letter-spacing: 2px;
+   font-size: 30px;
+   font-family: 'Cinzel', serif;
+}
