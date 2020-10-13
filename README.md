@@ -25,5 +25,7 @@ ModalBox : <a href="https://modalbox-byf.netlify.app">Demo</a>
 Typing : <a href="https://typewriting-byf.netlify.app">Demo</a>
 ***************************************************************
 
-
+****************************************************************************
+Navbar Menu : <a href="https://inspiring-raman-7baeca.netlify.app/">Demo</a>
+****************************************************************************
 
